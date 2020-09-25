@@ -64,3 +64,21 @@ C:\Users\User\Desktop\EAD SENAI\EAD DEV\EduX\EduX_Proj\EduX_Proj\EduX_Proj\obj\D
 C:\Users\User\Desktop\EAD SENAI\EAD DEV\EduX\EduX_Proj\EduX_Proj\EduX_Proj\obj\Debug\netcoreapp3.1\EduX_Proj.dll
 C:\Users\User\Desktop\EAD SENAI\EAD DEV\EduX\EduX_Proj\EduX_Proj\EduX_Proj\obj\Debug\netcoreapp3.1\EduX_Proj.pdb
 C:\Users\User\Desktop\EAD SENAI\EAD DEV\EduX\EduX_Proj\EduX_Proj\EduX_Proj\obj\Debug\netcoreapp3.1\EduX_Proj.genruntimeconfig.cache
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\bin\Debug\netcoreapp3.1\EduX_Proj.exe
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\bin\Debug\netcoreapp3.1\EduX_Proj.deps.json
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\bin\Debug\netcoreapp3.1\EduX_Proj.runtimeconfig.json
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\bin\Debug\netcoreapp3.1\EduX_Proj.runtimeconfig.dev.json
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\bin\Debug\netcoreapp3.1\EduX_Proj.dll
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\bin\Debug\netcoreapp3.1\EduX_Proj.pdb
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\obj\Debug\netcoreapp3.1\EduX_Proj.csprojAssemblyReference.cache
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\obj\Debug\netcoreapp3.1\EduX_Proj.AssemblyInfoInputs.cache
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\obj\Debug\netcoreapp3.1\EduX_Proj.AssemblyInfo.cs
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\obj\Debug\netcoreapp3.1\EduX_Proj.RazorTargetAssemblyInfo.cache
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\obj\Debug\netcoreapp3.1\staticwebassets\EduX_Proj.StaticWebAssets.Manifest.cache
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\obj\Debug\netcoreapp3.1\staticwebassets\EduX_Proj.StaticWebAssets.xml
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\obj\Debug\netcoreapp3.1\EduX_Proj.dll
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\obj\Debug\netcoreapp3.1\EduX_Proj.pdb
+C:\Users\Yokogawa\Documents\GitHub\EduX_Projeto\EduX_Proj\EduX_Proj\EduX_Proj\obj\Debug\netcoreapp3.1\EduX_Proj.genruntimeconfig.cache
