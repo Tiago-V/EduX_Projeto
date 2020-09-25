@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "wHxwzKrww+ul1ZcdxcM119FJClRNcvZzo+rnSxPnEo1HpAe8KueHAEHbcDx/pkfgbEL3pO6hBsvFqUP+nexOpg==",
+=======
+  "dgSpecHash": "aGPC0iRzql07Csdp+qbO55XZlDqwscwKNpdx7k91HQNwXXjF63kUHuY83TbxloraV5bxNo/MZUSqMcByX5NGvw==",
+>>>>>>> toshi
   "success": true,
   "projectFilePath": "C:\\Users\\Yokogawa\\Documents\\GitHub\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
   "expectedPackageFiles": [
