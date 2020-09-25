@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EduX_Proj.Contexts;
 using EduX_Proj.Domains;
+using EduX_Proj.Repositories;
 
 namespace EduX_Proj.Controllers
 {
@@ -14,97 +15,116 @@ namespace EduX_Proj.Controllers
     [ApiController]
     public class CurtidaController : ControllerBase
     {
-        private readonly EduXContext _context;
+        private readonly CurtidaRepository _curtidaRepository;
 
-        public CurtidaController(EduXContext context)
+        public CurtidaController()
         {
-            _context = context;
+            _curtidaRepository = new CurtidaRepository();
         }
 
-        // GET: api/Curtida
+        // GET: api/Dica
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Curtida>>> GetCurtida()
+        public IActionResult Get()
         {
-            return await _context.Curtida.ToListAsync();
-        }
-
-        // GET: api/Curtida/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Curtida>> GetCurtida(int id)
-        {
-            var curtida = await _context.Curtida.FindAsync(id);
-
-            if (curtida == null)
+            try
             {
-                return NotFound();
-            }
 
-            return curtida;
+                var curtidas = _curtidaRepository.ListarTodos();
+
+                if (curtidas.Count == 0)
+                    return NoContent();
+
+                return Ok(curtidas);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
         }
 
-        // PUT: api/Curtida/5
+        // GET: api/Dica/5
+        [HttpGet("{id}")]
+        public IActionResult Get(Guid id)
+        {
+            try
+            {
+                Curtida curtida = _curtidaRepository.BuscarPorID(id);
+
+                if (curtida == null)
+                    return NotFound();
+
+                return Ok(curtida);
+
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+        }
+
+        // PUT: api/Dica/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCurtida(int id, Curtida curtida)
+        public IActionResult Put(Guid id, Curtida curtida)
         {
-            if (id != curtida.IdCurtida)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(curtida).State = EntityState.Modified;
-
             try
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CurtidaExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+                //Edita a instituicao
+                _curtidaRepository.Alterar(id, curtida);
 
-            return NoContent();
+                //Retorna Ok com os dados da instituicao
+                return Ok(curtida);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
-        // POST: api/Curtida
+        // POST: api/Dica
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Curtida>> PostCurtida(Curtida curtida)
+        public IActionResult Post(Curtida curtida)
         {
-            _context.Curtida.Add(curtida);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetCurtida", new { id = curtida.IdCurtida }, curtida);
-        }
-
-        // DELETE: api/Curtida/5
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<Curtida>> DeleteCurtida(int id)
-        {
-            var curtida = await _context.Curtida.FindAsync(id);
-            if (curtida == null)
+            try
             {
-                return NotFound();
+                _curtidaRepository.Cadastrar(curtida);
+
+
+                return Ok(curtida);
             }
-
-            _context.Curtida.Remove(curtida);
-            await _context.SaveChangesAsync();
-
-            return curtida;
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
-        private bool CurtidaExists(int id)
+        // DELETE: api/Dica/5
+        [HttpDelete("{id}")]
+        public IActionResult Delete(Guid id)
         {
-            return _context.Curtida.Any(e => e.IdCurtida == id);
+            try
+            {
+
+                var curtida = _curtidaRepository.BuscarPorID(id);
+
+
+                if (curtida == null)
+                    return NotFound();
+
+
+                _curtidaRepository.Excluir(id);
+
+                return Ok(id);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

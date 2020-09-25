@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EduX_Proj.Contexts;
 using EduX_Proj.Domains;
+using EduX_Proj.Repositories;
 
 namespace EduX_Proj.Controllers
 {
@@ -14,97 +15,116 @@ namespace EduX_Proj.Controllers
     [ApiController]
     public class DicaController : ControllerBase
     {
-        private readonly EduXContext _context;
+        private readonly DicaRepository _dicaRepository;
 
-        public DicaController(EduXContext context)
+        public DicaController()
         {
-            _context = context;
+            _dicaRepository = new DicaRepository();
         }
 
         // GET: api/Dica
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Dica>>> GetDica()
+        public IActionResult Get()
         {
-            return await _context.Dica.ToListAsync();
+            try
+            {
+
+                var dicas = _dicaRepository.ListarTodos();
+
+                if (dicas.Count == 0)
+                    return NoContent();
+
+                return Ok(dicas);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
         }
 
         // GET: api/Dica/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Dica>> GetDica(int id)
+        public IActionResult Get(Guid id)
         {
-            var dica = await _context.Dica.FindAsync(id);
-
-            if (dica == null)
+            try
             {
-                return NotFound();
-            }
+                Dica dica = _dicaRepository.BuscarPorID(id);
 
-            return dica;
+                if (dica == null)
+                    return NotFound();
+
+                return Ok(dica);
+
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
         }
 
         // PUT: api/Dica/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutDica(int id, Dica dica)
+        public IActionResult Put(Guid id, Dica dica)
         {
-            if (id != dica.IdDica)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(dica).State = EntityState.Modified;
-
             try
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!DicaExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+                //Edita a instituicao
+                _dicaRepository.Alterar(id, dica);
 
-            return NoContent();
+                //Retorna Ok com os dados da instituicao
+                return Ok(dica);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         // POST: api/Dica
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Dica>> PostDica(Dica dica)
+        public IActionResult Post(Dica dica)
         {
-            _context.Dica.Add(dica);
-            await _context.SaveChangesAsync();
+            try
+            {
+                _dicaRepository.Cadastrar(dica);
 
-            return CreatedAtAction("GetDica", new { id = dica.IdDica }, dica);
+
+                return Ok(dica);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         // DELETE: api/Dica/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Dica>> DeleteDica(int id)
+        public IActionResult Delete(Guid id)
         {
-            var dica = await _context.Dica.FindAsync(id);
-            if (dica == null)
+            try
             {
-                return NotFound();
+
+                var dica = _dicaRepository.BuscarPorID(id);
+
+
+                if (dica == null)
+                    return NotFound();
+
+
+                _dicaRepository.Excluir(id);
+
+                return Ok(id);
             }
-
-            _context.Dica.Remove(dica);
-            await _context.SaveChangesAsync();
-
-            return dica;
-        }
-
-        private bool DicaExists(int id)
-        {
-            return _context.Dica.Any(e => e.IdDica == id);
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }
