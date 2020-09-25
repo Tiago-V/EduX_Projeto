@@ -2,7 +2,11 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "C:\\Users\\Yokogawa\\.dotnet\\store\\|arch|\\|tfm|",
+<<<<<<< HEAD
       "C:\\Users\\User\\.nuget\\packages"
+=======
+      "C:\\Users\\Yokogawa\\.nuget\\packages"
+>>>>>>> toshi
     ]
   }
 }
