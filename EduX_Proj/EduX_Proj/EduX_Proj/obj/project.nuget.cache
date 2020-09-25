@@ -1,14 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "dgSpecHash": "wHxwzKrww+ul1ZcdxcM119FJClRNcvZzo+rnSxPnEo1HpAe8KueHAEHbcDx/pkfgbEL3pO6hBsvFqUP+nexOpg==",
-=======
-  "dgSpecHash": "aGPC0iRzql07Csdp+qbO55XZlDqwscwKNpdx7k91HQNwXXjF63kUHuY83TbxloraV5bxNo/MZUSqMcByX5NGvw==",
->>>>>>> toshi
-=======
   "dgSpecHash": "Us7LqZeZSUYyJP2mzDXC/qZQ/suAoirw/F1aJmGYBr68CHfIwhoKJLEQmc4x9l0v2jp4Ks4B093TPLOP7ZxGUA==",
->>>>>>> toshi
   "success": true,
   "projectFilePath": "C:\\Users\\Yokogawa\\Documents\\GitHub\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
   "expectedPackageFiles": [
@@ -188,5 +180,12 @@
     "C:\\Users\\Yokogawa\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Yokogawa\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\Yokogawa\\Documents\\GitHub\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
