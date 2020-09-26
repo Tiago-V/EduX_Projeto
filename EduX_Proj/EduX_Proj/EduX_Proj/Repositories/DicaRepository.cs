@@ -22,7 +22,7 @@ namespace EduX_Proj.Repositories
         /// </summary>
         /// <param name="id"></param>
         /// <param name="dica"></param>
-        public void Alterar(Guid id, Dica dica)
+        public void Alterar(int id, Dica dica)
         {
             try
             {
@@ -47,7 +47,7 @@ namespace EduX_Proj.Repositories
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Retorna o produto buscado</returns>
-        public Dica BuscarPorID(Guid id)
+        public Dica BuscarPorID(int id)
         {
             try
             {
@@ -82,7 +82,7 @@ namespace EduX_Proj.Repositories
         /// Exclui um produto do banco.
         /// </summary>
         /// <param name="id"></param>
-        public void Excluir(Guid id)
+        public void Excluir(int id)
         {
             try
             {
