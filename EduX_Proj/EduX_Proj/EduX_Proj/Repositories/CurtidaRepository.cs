@@ -22,7 +22,7 @@ namespace EduX_Proj.Repositories
         /// </summary>
         /// <param name="id"></param>
         /// <param name="curtida"></param>
-        public void Alterar(Guid id, Curtida curtida)
+        public void Alterar(int id, Curtida curtida)
         {
             try
             {
@@ -43,7 +43,7 @@ namespace EduX_Proj.Repositories
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public Curtida BuscarPorID(Guid id)
+        public Curtida BuscarPorID(int id)
         {
             try
             {
@@ -78,7 +78,7 @@ namespace EduX_Proj.Repositories
         /// Exclui uma curtida do banco.
         /// </summary>
         /// <param name="id"></param>
-        public void Excluir(Guid id)
+        public void Excluir(int id)
         {
             try
             {

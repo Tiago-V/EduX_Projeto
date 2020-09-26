@@ -12,7 +12,7 @@ namespace EduX_Proj.Domains
 
         public int IdObjetivo { get; set; }
         public string Descricao { get; set; }
-        public int? IdCategoria { get; set; }
+        public int IdCategoria { get; set; }
 
         public virtual Categoria IdCategoriaNavigation { get; set; }
         public virtual ICollection<ObjetivoAluno> ObjetivoAluno { get; set; }

@@ -45,7 +45,7 @@ namespace EduX_Proj.Controllers
 
         // GET: api/Dica/5
         [HttpGet("{id}")]
-        public IActionResult Get(Guid id)
+        public IActionResult Get(int id)
         {
             try
             {
@@ -68,7 +68,7 @@ namespace EduX_Proj.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public IActionResult Put(Guid id, Dica dica)
+        public IActionResult Put(int id, Dica dica)
         {
             try
             {
@@ -105,7 +105,7 @@ namespace EduX_Proj.Controllers
 
         // DELETE: api/Dica/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(Guid id)
+        public IActionResult Delete(int id)
         {
             try
             {

@@ -9,10 +9,10 @@ namespace EduX_Proj.Interface
     interface IDica
     {
         List<Dica> ListarTodos();
-        Dica BuscarPorID(Guid id);
+        Dica BuscarPorID(int id);
         void Cadastrar(Dica dica);
-        void Alterar(Guid id, Dica dica);
-        void Excluir(Guid id);
+        void Alterar(int id, Dica dica);
+        void Excluir(int id);
 
     }
 }

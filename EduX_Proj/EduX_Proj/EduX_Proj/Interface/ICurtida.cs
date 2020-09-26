@@ -10,10 +10,10 @@ namespace EduX_Proj.Interface
     {
 
         List<Curtida> ListarTodos();
-        Curtida BuscarPorID(Guid id);
+        Curtida BuscarPorID(int id);
         void Cadastrar(Curtida curtida);
-        void Alterar(Guid id, Curtida curtida);
-        void Excluir(Guid id);
+        void Alterar(int id, Curtida curtida);
+        void Excluir(int id);
 
     }
 }
