@@ -65,6 +65,8 @@ namespace EduX_Proj
 
             app.UseAuthorization();
 
+            app.UseStaticFiles();
+
             app.UseSwagger();
 
             app.UseSwaggerUI(c =>

@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using EduX_Proj.Contexts;
 using EduX_Proj.Domains;
 using EduX_Proj.Repositories;
+using System.IO;
 
 namespace EduX_Proj.Controllers
 {
@@ -88,10 +89,24 @@ namespace EduX_Proj.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public IActionResult Post(Dica dica)
+        public IActionResult Post([FromForm]Dica dica)
         {
             try
             {
+
+                if(dica.Imagem != null)
+                {
+                    var nomeArquivo = Guid.NewGuid().ToString().Replace("-", "") + Path.GetExtension(dica.Imagem.FileName);
+
+                    var caminhoArquivo = Path.Combine(Directory.GetCurrentDirectory(), @"wwwRoot/upload/imagens", nomeArquivo);
+
+                    using var streamImagem = new FileStream(caminhoArquivo, FileMode.Create);
+
+                    dica.Imagem.CopyTo(streamImagem);
+
+                    dica.UrlImagem = "https://localhost:44355/upload/imagens" + nomeArquivo;
+                }
+
                 _dicaRepository.Cadastrar(dica);
 
 
