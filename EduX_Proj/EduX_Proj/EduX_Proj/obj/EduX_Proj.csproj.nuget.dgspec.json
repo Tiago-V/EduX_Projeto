@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yokogawa\\Documents\\GitHub\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj": {}
+    "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yokogawa\\Documents\\GitHub\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj": {
+    "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yokogawa\\Documents\\GitHub\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
+        "projectUniqueName": "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
         "projectName": "EduX_Proj",
-        "projectPath": "C:\\Users\\Yokogawa\\Documents\\GitHub\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
-        "packagesPath": "C:\\Users\\Yokogawa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yokogawa\\Documents\\GitHub\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\obj\\",
+        "projectPath": "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
+        "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Yokogawa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

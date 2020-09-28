@@ -9005,19 +9005,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yokogawa\\.nuget\\packages\\": {}
+    "C:\\Users\\fic\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yokogawa\\Documents\\GitHub\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
+      "projectUniqueName": "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
       "projectName": "EduX_Proj",
-      "projectPath": "C:\\Users\\Yokogawa\\Documents\\GitHub\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
-      "packagesPath": "C:\\Users\\Yokogawa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yokogawa\\Documents\\GitHub\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\obj\\",
+      "projectPath": "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
+      "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Yokogawa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9099,13 +9099,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\Yokogawa\\Documents\\GitHub\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
