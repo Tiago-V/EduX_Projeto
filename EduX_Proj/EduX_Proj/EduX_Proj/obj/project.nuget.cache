@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "uYgKcFRbYDvq5NV/NHEP4SM1o1U52VmVdHxz8eEx7QaGs28AqYEl6U5slrq4ilP7dp17B+zT/NNQ+4cp90pVIQ==",
+=======
   "dgSpecHash": "cobIimOO+1Sih6GZRnKjfMZ9NVdSonU/RTju5Wp92PSQgj3HOzPU5dHU6YH69ulB92T8MSsB4QAMzwhreXPg7g==",
+>>>>>>> master
   "success": true,
   "projectFilePath": "C:\\Users\\User\\Desktop\\EAD SENAI\\EAD DEV\\EduX\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
   "expectedPackageFiles": [
