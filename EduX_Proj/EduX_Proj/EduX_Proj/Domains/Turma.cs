@@ -13,7 +13,7 @@ namespace EduX_Proj.Domains
 
         public Guid IdTurma { get; set; }
         public string Descricao { get; set; }
-        public int? IdCurso { get; set; }
+        public int IdCurso { get; set; }
 
         public virtual Instituicao IdCursoNavigation { get; set; }
         public virtual ICollection<AlunoTurma> AlunoTurma { get; set; }
