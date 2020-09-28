@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\User\\Desktop\\EAD SENAI\\EAD DEV\\EduX\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
+        "projectName": "EduX_Proj",
+        "projectPath": "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\EduX_Proj.csproj",
+        "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fic\\Desktop\\Edux\\EduX_Projeto\\EduX_Proj\\EduX_Proj\\EduX_Proj\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> d49ba298802467d8fcd99a235723d14065b49574
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
